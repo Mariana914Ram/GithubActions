@@ -16,8 +16,8 @@ jobs:
     - name: Build and Deploy
       run: |
         mkdir -p $GITHUB_WORKSPACE/deploy
-        cd $GITHUB_WORKSPACE
-        cp -R * deploy
-        ls -R deploy
+        cp -R . $GITHUB_WORKSPACE/deploy
+        ls -R $GITHUB_WORKSPACE/deploy
+
 
 

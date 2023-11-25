@@ -15,9 +15,6 @@ jobs:
 
     - name: Build and Deploy
       run: |
-        # Copiar archivos al directorio de implementación
         cp -R * $GITHUB_WORKSPACE/deploy
-
-        # Imprimir la lista de archivos copiados
         ls $GITHUB_WORKSPACE/deploy
 
